@@ -1,7 +1,5 @@
-import { defineConfig } from "vite";
-import { resolve } from "path";
+import { defineConfig } from 'vite';
 
-export default defineConfig({
-  base: "./",
-  
-});
+            export default defineConfig({
+            base: '/portfolio_random/', // Reemplazar con el nombre del repo en github
+            });
