@@ -1,0 +1,110 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+
+// Verión movil
+
+header {
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+    .logo {
+        margin-bottom: 20px;
+    }
+}
+
+
+// mediaquery para dispositivos tablets 
+    
+@include mix.breakpoint(tablet) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+
+        .logo {
+            width: 200px;
+        }
+
+        .icon-rrss img {
+            width: 25px;
+        }
+
+
+    }
+
+    .header-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: 80px;
+        margin-left: 30px;
+        margin-right: 30px;
+        border-top: solid 2px vars.$white;
+        padding-top: 40px;
+
+        .logo {
+            width: 200px;
+        }
+
+        .icon-rrss img {
+            width: 25px;
+        }
+
+
+    }
+}
+
+
+// mediaquery para dispositivos desktop 
+@include mix.breakpoint(desktop) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+        margin-right: 20px;
+
+        .logo {
+            width: 200px;
+        }
+
+        .icon-rrss img {
+            width: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .icon-rrss:hover {
+            filter: brightness(0) saturate(100%) invert(72%) sepia(45%) saturate(450%) hue-rotate(95deg) brightness(100%) contrast(90%);
+            transition: all 0.3s;
+        }
+
+
+    }
+
+    .header-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 70px;
+        margin-top: 80px;
+        margin-left: 110px;
+        margin-right: 130px;
+        border-top: solid 2px vars.$white;
+        padding-top: 40px;
+
+        .logo {
+            width: 200px;
+        }
+
+        .icon-rrss img {
+            width: 25px;
+        }
+
+
+    }
+}

@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as vars;
+
+html * {
+    font-family: vars.$font-family;
+  
+}
+ 
+body {
+    overflow-x: hidden;
+    background-color: vars.$black;
+    color: vars.$white;
+    
+} 
