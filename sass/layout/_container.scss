@@ -21,7 +21,7 @@
   .hero::after {
     content: ""; 
     position: absolute;
-    background-image: url("../../img/circulos.png");
+    background-image: url("img/circulos.png");
     background-repeat: no-repeat;
     background-size: cover;
     top: 185px;
@@ -38,7 +38,7 @@
   .hero::before {
     content: ""; 
     position: absolute;
-    background-image: url("../../img/ovalo.png");
+    background-image: url("img/ovalo.png");
     background-repeat: no-repeat;
     background-size: cover;
     top: 320px;
@@ -142,7 +142,7 @@
     &::after {
       content: ""; 
       position: absolute;
-      background-image: url("../../img/circulos-2.png");
+      background-image: url("img/circulos-2.png");
       background-repeat: no-repeat;
       background-size: cover;
       top: 636px;
